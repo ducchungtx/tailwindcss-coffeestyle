@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TailwindCSS - Coffee style</title>
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <div id="root">
-    <div class="content-wrapper">
-      <header>
-        header
-      </header>
-      <main>
-        <div class="slider">
-          Slider
-        </div> <!-- End slider -->
-        
-        <div class="story">
-          Story
-        </div> <!-- End story -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS - Coffee style</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
 
-        <div class="featured-mugs">
-          featured-mugs
-        </div> <!-- End featured-mugs -->
-        
-        <div class="more-products">
-          more-products
-        </div> <!-- End more-products -->
+  <body>
+    <div id="root">
+      <div
+        class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-200"
+      >
+        <header class="py-6 mx-10">
+          <nav class="flex flex-row justify-between items-center">
+            <div
+              class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer"
+            >
+              CoffeeStyle.
+            </div>
+            <ul
+              class="basis-3/6 flex items-center justify-end gap-8 uppercase text-sm text-gray-500 font-medium"
+            >
+              <li
+                class="cursor-pointer py-1 hover:text-light-coffee relative after:absolute after:bottom-0 after:left-0 after:bg-slate-900 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Our Products</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">StyleGuide</a>
+              </li>
+            </ul>
+            <ul class="basis-1/6">
+              <li>
+                <a href="#">Card</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <div class="slider">Slider</div>
+          <!-- End slider -->
 
-        <div class="coffee-magazine">
-          coffee-magazine
-        </div> <!-- End coffee-magazine -->
+          <div class="story">Story</div>
+          <!-- End story -->
 
-        <div class="lifestyle-stories">
-          lifestyle-stories
-        </div> <!-- End lifestyle-stories -->
+          <div class="featured-mugs">featured-mugs</div>
+          <!-- End featured-mugs -->
 
-        <div class="subscribe-us">
-          subscribe-us
-        </div> <!-- End subscribe-us -->
-      </main>
-      <footer>
-        footer
-      </footer>
-    </div> <!-- End content-wrapper -->
-  </div>
-</body>
+          <div class="more-products">more-products</div>
+          <!-- End more-products -->
+
+          <div class="coffee-magazine">coffee-magazine</div>
+          <!-- End coffee-magazine -->
+
+          <div class="lifestyle-stories">lifestyle-stories</div>
+          <!-- End lifestyle-stories -->
+
+          <div class="subscribe-us">subscribe-us</div>
+          <!-- End subscribe-us -->
+        </main>
+        <footer>footer</footer>
+      </div>
+      <!-- End content-wrapper -->
+    </div>
+  </body>
 </html>
